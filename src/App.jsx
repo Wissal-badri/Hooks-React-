@@ -3,6 +3,7 @@ import './App.css'
 import Exercice3 from './UseState/Exercice3.jsx'
 import Exercice1 from './UseState/Exercice1.jsx'
 import Exercice2 from './UseState/Exercice2.jsx'
+import Exemple from './UseRef/Exemple.jsx'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Exercice1 />
       <Exercice2 />
       <Exercice3 />
+      <Exemple />
     </div>
   )
 }

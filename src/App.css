@@ -1,10 +1,10 @@
 /* Layout container for the three exercices */
 .exercices-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
   gap: 1.5rem;
-  justify-content: center;
-  align-items: flex-start;
+  justify-items: center;
+  align-items: start;
 }
 
 .ex-card {
