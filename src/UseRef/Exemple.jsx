@@ -10,11 +10,6 @@ function Exemple() {
     setCounter((c) => c + 1)
   }
 
-  const reset = () => {
-    clickRef.current = 0
-    setCounter(0)
-  }
-
   useEffect(() => {
     console.log(`Nombre de clics: ${clickRef.current}`)
   }, [counter])
@@ -23,10 +18,7 @@ function Exemple() {
     <div className="ex-card ex-ref-container">
       <h3>Exemple (useRef)</h3>
       <p>{counter}</p>
-      <div className="ex-ref-actions">
-        <button onClick={handleClicks}>Clique moi</button>
-        <button onClick={reset}>Réinitialiser</button>
-      </div>
+      <button onClick={handleClicks}>Clique moi</button>
     </div>
   )
 }

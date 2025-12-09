@@ -1,0 +1,28 @@
+.ex-ref-ex2 {
+  gap: 0.85rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.ex-ref-ex2 input {
+  width: 80%;
+  max-width: 320px;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.06);
+  color: var(--text-strong);
+  outline: none;
+  transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.ex-ref-ex2 input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47,106,223,0.28);
+}
+
+.ex-ref-ex2 p {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+}
+
