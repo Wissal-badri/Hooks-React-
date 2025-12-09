@@ -1,0 +1,21 @@
+.ex1-container {
+  gap: 1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto;
+  color: var(--text-strong);
+}
+
+.ex1-container input {
+  width: 80%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+  transition: box-shadow 200ms ease;
+}
+
+.ex1-container input:focus {
+  box-shadow: 0 0 8px rgba(79,126,247,0.7);
+}

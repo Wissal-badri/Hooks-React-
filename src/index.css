@@ -1,0 +1,84 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color tokens for midnight-blue theme */
+  --bg-900: #020d24; /* deeper midnight */
+  --bg-800: #041432;
+  --bg-700: #072045;
+  --card-bg-start: rgba(10,22,48,0.6);
+  --card-bg-end: rgba(5,14,32,0.7);
+  --text-strong: rgba(230,238,248,0.98);
+  --text-muted: rgba(200,210,222,0.76);
+  --accent: #2f6adf; /* darker blue accent */
+
+  color-scheme: dark;
+  color: var(--text-strong);
+  background-color: var(--bg-900);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: radial-gradient(ellipse at 10% 10%, rgba(59,130,246,0.045), transparent 8%),
+    radial-gradient(ellipse at 90% 80%, rgba(99,102,241,0.03), transparent 10%),
+    linear-gradient(180deg, var(--bg-800) 0%, var(--bg-900) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 160ms, transform 120ms, border-color 160ms;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
