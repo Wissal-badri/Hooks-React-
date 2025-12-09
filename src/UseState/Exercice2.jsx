@@ -31,7 +31,7 @@ function Exercice2() {
 
   return (
     <div className="ex-card ex2-container">
-        <h3>Exercice 2 : Timer</h3>
+        <h3>Exercice 2 UseState : Timer</h3>
         <p>{isRunning ? `Tic ${ticks}` : 'Prêt à démarrer le tic'}</p>
         <div className="ex2-actions">
           <button onClick={startTic} disabled={isRunning}>Start Tic</button>

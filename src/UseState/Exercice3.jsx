@@ -6,7 +6,7 @@ function Exercice3() {
 
   return (
     <div className="ex-card ex3-container">
-        <h3>Exercice 3 : Toggle</h3>
+        <h3>Exercice 3 UseState : Toggle</h3>
       <p>{visible ? 'Bienvenue' : 'Au revoir'}</p>
       <button onClick={() => setVisible((v) => !v)}>
         Toggle

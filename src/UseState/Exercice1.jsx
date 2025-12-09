@@ -11,7 +11,7 @@ function Exercice1() {
 
   return (
     <div className="ex-card ex1-container">
-        <h3>Exercice 1 : Input contrôlé</h3>
+        <h3>Exercice 1 UseState: Input contrôlé</h3>
       <input
         type="text"
         placeholder="Tape quelque chose..."
