@@ -3,7 +3,7 @@ import './NomFiltre.css'
 
 export default function NomFiltre() {
     const [nomFiltre, setNomFiltre] = useState('')
-    const noms = ["Wissal", "Ahmed", "Ghali", "Ali", "Omar", "Hamza", "Laila"]
+    const noms = ["Wissal", "Ahmed", "Ghali", "Rania", "Ali", "Nabil", "Yassmine", "Omar", "Hamza", "Laila"]
 
     const nomsFiltres = useMemo(() => {
         console.log("Filtrage en cours...")
