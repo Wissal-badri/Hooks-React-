@@ -1,5 +1,5 @@
 import React from 'react'
-import { useUserContext } from './UserContext.jsx'
+import { useUserContext } from './UserContext_temp.jsx'
 import './Profile.css'
 
 export default function Profile() {
