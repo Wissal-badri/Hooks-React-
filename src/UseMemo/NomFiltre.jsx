@@ -1,16 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import './NomFiltre.css'
 
 export default function NomFiltre() {
-   const [nomFiltre, setNomFiltre] = useState('')
-   const noms=["Wissal","Ahmed","Ghali","Ali","Omar","Hamza", "Laila"]
-   const filtre=(nom)=>{
-    return nom.toLowerCase().includes(nomFiltre.toLowerCase())
-   }
-   const nomsFiltres=noms.filter(filtre)
+    const [nomFiltre, setNomFiltre] = useState('')
+    const noms = ["Wissal", "Ahmed", "Ghali", "Ali", "Omar", "Hamza", "Laila"]
+
+    const nomsFiltres = useMemo(() => {
+        console.log("Filtrage en cours...")
+        return noms.filter(nom => nom.toLowerCase().includes(nomFiltre.toLowerCase()))
+    }, [nomFiltre, noms])
+
     return (
-        <div>
-            <input type="text" onChange={(e) => setNomFiltre(e.target.value)} />
+        <div className="ex-card nom-filtre-container">
+            <h3>Exercice UseMemo</h3>
+            <input 
+                type="text" 
+                placeholder="Filtrer les noms..."
+                value={nomFiltre}
+                onChange={(e) => setNomFiltre(e.target.value)} 
+            />
+            <ul className="noms-list">
+                {nomsFiltres.map((nom, index) => (
+                    <li key={index}>{nom}</li>
+                ))}
+            </ul>
         </div>
     )
 }
